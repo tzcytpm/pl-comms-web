@@ -1,4 +1,4 @@
-# How to translate Element (Dev Guide)
+# How to translate PL Comms (Dev Guide)
 
 ## Requirements
 

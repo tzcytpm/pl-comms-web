@@ -1,13 +1,13 @@
-# Theming Element
+# Theming PL Comms
 
 Themes are a very basic way of providing simple alternative look & feels to the
-Element app via CSS & custom imagery.
+PL Comms app via CSS & custom imagery.
 
 They are _NOT_ co be confused with 'skins', which describe apps which sit on top
-of matrix-react-sdk - e.g. in theory Element itself is a react-sdk skin.
-As of March 2022, skins are not fully supported; Element is the only available skin.
+of matrix-react-sdk - e.g. in theory PL Comms itself is a react-sdk skin.
+As of March 2022, skins are not fully supported; PL Comms is the only available skin.
 
-To define a theme for Element:
+To define a theme for PL Comms:
 
 1.  Pick a name, e.g. `teal`. at time of writing we have `light` and `dark`.
 2.  Fork `src/skins/vector/css/themes/dark.pcss` to be `teal.pcss`
