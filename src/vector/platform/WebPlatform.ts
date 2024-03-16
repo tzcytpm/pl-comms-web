@@ -191,7 +191,7 @@ export default class WebPlatform extends VectorBasePlatform {
         // strip query-string and fragment from uri
         const url = new URL(window.location.href);
 
-        // `appName` in the format `develop.element.io/abc/xyz`
+        // `appName` in the format `develop.im.privateline.dev/abc/xyz`
         const appName = [
             url.host,
             url.pathname.replace(/\/$/, ""), // Remove trailing slash if present

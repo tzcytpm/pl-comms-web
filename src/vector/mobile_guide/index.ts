@@ -12,7 +12,7 @@ function onBackToElementClick(): void {
 function renderConfigError(message: string): void {
     const contactMsg =
         "If this is unexpected, please contact your system administrator " + "or technical support representative.";
-    message = `<h2>Error loading Element</h2><p>${message}</p><p>${contactMsg}</p>`;
+    message = `<h2>Error loading PL Comms</h2><p>${message}</p><p>${contactMsg}</p>`;
 
     const toHide = document.getElementsByClassName("mx_HomePage_container");
     const errorContainers = document.getElementsByClassName(
@@ -104,7 +104,7 @@ async function initPage(): Promise<void> {
     if (isUrl && !isUrl.endsWith("/")) isUrl += "/";
 
     if (hsUrl !== "https://matrix.org/") {
-        let url = "https://mobile.element.io?hs_url=" + encodeURIComponent(hsUrl);
+        let url = "https://mobile.im.privateline.dev?hs_url=" + encodeURIComponent(hsUrl);
 
         if (isUrl) {
             document.getElementById("custom_is")!.style.display = "block";
