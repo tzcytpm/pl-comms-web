@@ -23,9 +23,7 @@ import { _t } from "../../../languageHandler";
 const VectorAuthFooter = (): ReactElement => {
     const brandingConfig = SdkConfig.getObject("branding");
     const links = brandingConfig?.get("auth_footer_links") ?? [
-        { text: "Blog", url: "https://element.io/blog" },
-        { text: "Twitter", url: "https://twitter.com/element_hq" },
-        { text: "GitHub", url: "https://github.com/element-hq/element-web" },
+        { "text": "PL Comms", "url": "https://im.privateline.dev" }
     ];
 
     const authFooterLinks: JSX.Element[] = [];
@@ -40,8 +38,8 @@ const VectorAuthFooter = (): ReactElement => {
     return (
         <footer className="mx_AuthFooter" role="contentinfo">
             {authFooterLinks}
-            <a href="https://matrix.org" target="_blank" rel="noreferrer noopener">
-                {_t("powered_by_matrix")}
+            <a href="https://privateline.io" target="_blank" rel="noreferrer noopener">
+                Powered by privateLINE
             </a>
         </footer>
     );

@@ -34,7 +34,7 @@ const ErrorView: React.FC<IProps> = ({ title, messages }) => {
             <div className="mx_ErrorView_container">
                 <div className="mx_HomePage_header">
                     <span className="mx_HomePage_logo">
-                        <img height="42" src="themes/element/img/logos/element-logo.svg" alt="Element" />
+                        <img height="42" src="themes/element/img/logos/plcomms-logo.png" alt="Element" />
                     </span>
                     <h1>{_t("failed_to_start")}</h1>
                 </div>
@@ -48,7 +48,7 @@ const ErrorView: React.FC<IProps> = ({ title, messages }) => {
                 </div>
                 <div className="mx_HomePage_row mx_Center mx_Spacer">
                     <p className="mx_Spacer">
-                        <a href="https://element.io" target="_blank" className="mx_FooterLink">
+                        <a href="https://im.privateline.dev" target="_blank" className="mx_FooterLink">
                             {_t("go_to_element_io")}
                         </a>
                     </p>
