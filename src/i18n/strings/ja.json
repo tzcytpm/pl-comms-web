@@ -21,7 +21,7 @@
         "misconfigured": "Elementの設定が誤っています"
     },
     "failed_to_start": "起動に失敗しました",
-    "go_to_element_io": "element.ioへ移動",
+    "go_to_element_io": "privateline.devへ移動",
     "incompatible_browser": {
         "browser_links": "最高のユーザー体験を得るためには、<chromeLink>Chrome</chromeLink>か<firefoxLink>Firefox</firefoxLink>、もしくは<safariLink>Safari</safariLink>をインストールしてください。",
         "continue_warning": "リスクを理解して続行",

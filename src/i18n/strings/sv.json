@@ -19,10 +19,10 @@
         "invalid_json": "Din Elementkonfiguration innehåller ogiltig JSON. Vänligen rätta till problemet och ladda om sidan.",
         "invalid_json_detail": "Meddelandet från parsern är: %(message)s",
         "invalid_json_generic": "Ogiltig JSON",
-        "misconfigured": "Din Element är felkonfigurerad"
+        "misconfigured": "Din PL Comms är felkonfigurerad"
     },
     "failed_to_start": "Misslyckade att starta",
-    "go_to_element_io": "Gå till element.io",
+    "go_to_element_io": "Gå till privateline.dev",
     "incompatible_browser": {
         "browser_links": "Installera <chromeLink>Chrome</chromeLink>, <firefoxLink>Firefox</firefoxLink>, eller <safariLink>Safari</safariLink> för den bästa upplevelsen.",
         "continue_warning": "Jag förstår riskerna och vill fortsätta",
@@ -36,5 +36,5 @@
     "unknown_device": "Okänd enhet",
     "use_brand_on_mobile": "Använd %(brand)s på mobilen",
     "web_default_device_name": "%(appName)s: %(browserName)s på %(osName)s",
-    "welcome_to_element": "Välkommen till Element"
+    "welcome_to_element": "Välkommen till PL Comms"
 }

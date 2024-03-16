@@ -21,7 +21,7 @@
         "misconfigured": "Via Elemento estas misagordita"
     },
     "failed_to_start": "Malsukcesis starti",
-    "go_to_element_io": "Iri al element.io",
+    "go_to_element_io": "Iri al privateline.dev",
     "incompatible_browser": {
         "browser_links": "Bonvolu instali retumilon <chromeLink>Chrome</chromeLink>, <firefoxLink>Firefox</firefoxLink>, aŭ <safariLink>Safari</safariLink>, por la plej bona sperto.",
         "continue_warning": "Mi komprenas la riskon kaj volas pluiĝi",
@@ -35,5 +35,5 @@
     "unknown_device": "Nekonata aparato",
     "use_brand_on_mobile": "Uzi %(brand)s poŝtelefone",
     "web_default_device_name": "%(appName)s: %(browserName)s sur %(osName)s",
-    "welcome_to_element": "Bonvenon al Element"
+    "welcome_to_element": "Bonvenon al PL Comms"
 }
