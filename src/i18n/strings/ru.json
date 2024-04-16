@@ -22,7 +22,7 @@
         "misconfigured": "Ваш PL Comms неверно настроен"
     },
     "failed_to_start": "Старт не удался",
-    "go_to_element_io": "К privateline.dev",
+    "go_to_element_io": "К privateline.network",
     "incompatible_browser": {
         "browser_links": "Пожалуйста поставьте <chromeLink>Chrome</chromeLink>, <firefoxLink>Firefox</firefoxLink>, или <safariLink>Safari</safariLink> для лучшей совместимости.",
         "continue_warning": "Я понимаю риск и хочу продолжить",

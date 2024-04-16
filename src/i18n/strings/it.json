@@ -22,7 +22,7 @@
         "misconfigured": "Il tuo elemento è configurato male"
     },
     "failed_to_start": "Avvio fallito",
-    "go_to_element_io": "Vai su privateline.dev",
+    "go_to_element_io": "Vai su privateline.network",
     "incompatible_browser": {
         "browser_links": "Installa <chromeLink>Chrome</chromeLink>, <firefoxLink>Firefox</firefoxLink>, o <safariLink>Safari</safariLink> per una migliore esperienza.",
         "continue_warning": "Capisco i rischi e desidero continuare",

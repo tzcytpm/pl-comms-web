@@ -21,7 +21,7 @@
         "misconfigured": "PL Comms אינו מוגדר תקין"
     },
     "failed_to_start": "כשל בהעלאת התוכנה",
-    "go_to_element_io": "חזור לאתר הראשי: privateline.dev",
+    "go_to_element_io": "חזור לאתר הראשי: privateline.network",
     "incompatible_browser": {
         "browser_links": "נא התקן את דפדפן <chromeLink>כרום</chromeLink>, <firefoxLink>פיירפוקס</firefoxLink> או <safariLink>סאפרי</safariLink> בשביל החוויה הטובה ביותר.",
         "continue_warning": "הסיכונים מובנים לי ואני מעוניינ/ת להמשיך",

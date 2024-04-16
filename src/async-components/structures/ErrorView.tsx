@@ -48,7 +48,7 @@ const ErrorView: React.FC<IProps> = ({ title, messages }) => {
                 </div>
                 <div className="mx_HomePage_row mx_Center mx_Spacer">
                     <p className="mx_Spacer">
-                        <a href="https://im.privateline.dev" target="_blank" className="mx_FooterLink">
+                        <a href="https://im.privateline.network" target="_blank" className="mx_FooterLink">
                             {_t("go_to_element_io")}
                         </a>
                     </p>

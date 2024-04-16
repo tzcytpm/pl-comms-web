@@ -21,7 +21,7 @@
         "misconfigured": "Jūsų PL Comms yra neteisingai sukonfigūruotas"
     },
     "failed_to_start": "Nepavyko paleisti",
-    "go_to_element_io": "Eiti į privateline.dev",
+    "go_to_element_io": "Eiti į privateline.network",
     "incompatible_browser": {
         "browser_links": "Geriausiam veikimui suinstaliuokite <chromeLink>Chrome</chromeLink>, <firefoxLink>Firefox</firefoxLink>, arba <safariLink>Safari</safariLink>.",
         "continue_warning": "Suprantu šią riziką ir noriu tęsti",

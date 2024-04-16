@@ -22,7 +22,7 @@
         "misconfigured": "您的 PL Comms 設定錯誤"
     },
     "failed_to_start": "啟動失敗",
-    "go_to_element_io": "前往 privateline.dev",
+    "go_to_element_io": "前往 privateline.network",
     "incompatible_browser": {
         "browser_links": "請安裝 <chromeLink>Chrome</chromeLink>、<firefoxLink>Firefox</firefoxLink> 或 <safariLink>Safari</safariLink> 以取得最佳體驗。",
         "continue_warning": "我了解風險並希望繼續",

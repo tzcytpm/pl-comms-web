@@ -21,7 +21,7 @@
         "misconfigured": "PL Comms-tilvikið þitt er rangt stillt"
     },
     "failed_to_start": "Mistókst að ræsa",
-    "go_to_element_io": "Fara á privateline.dev",
+    "go_to_element_io": "Fara á privateline.network",
     "incompatible_browser": {
         "browser_links": "Þú ættir að setja upp <chromeLink>Chrome</chromeLink>, <firefoxLink>Firefox</firefoxLink>, eða <safariLink>Safari</safariLink> til að fá sem besta útkomu.",
         "continue_warning": "Ég skil áhættuna og óska að halda áfram",

@@ -22,7 +22,7 @@
         "misconfigured": "Sinu PL Comms on valesti seadistatud"
     },
     "failed_to_start": "Käivitamine ei õnnestunud",
-    "go_to_element_io": "Mine privateline.dev lehele",
+    "go_to_element_io": "Mine privateline.network lehele",
     "incompatible_browser": {
         "browser_links": "Parima kasutuskogemuse jaoks palun paigalda <chromeLink>Chrome</chromeLink>, <firefoxLink>Firefox</firefoxLink> või <safariLink>Safari</safariLink>.",
         "continue_warning": "Ma mõistan riske ja soovin jätkata",

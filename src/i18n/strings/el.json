@@ -20,7 +20,7 @@
         "misconfigured": "Το PL Comms σας δεν εχει ρυθμιστεί σωστά"
     },
     "failed_to_start": "Αποτυχία έναρξης",
-    "go_to_element_io": "Πήγαινε στο privateline.dev",
+    "go_to_element_io": "Πήγαινε στο privateline.network",
     "incompatible_browser": {
         "browser_links": "Παρακαλούμε εγκαταστήστε <chromeLink>Chrome</chromeLink>, <firefoxLink>Firefox</firefoxLink>, ή <safariLink>Safari</safariLink> για καλύτερη εμπειρία χρήσης.",
         "continue_warning": "Κατανοώ τους κινδύνους και επιθυμώ να συνεχίσω",

@@ -22,7 +22,7 @@
         "misconfigured": "Anda salah mengatur PL Comms"
     },
     "failed_to_start": "Gagal untuk memulai",
-    "go_to_element_io": "Buka privateline.dev",
+    "go_to_element_io": "Buka privateline.network",
     "incompatible_browser": {
         "browser_links": "Silakan instal <chromeLink>Chrome</chromeLink>, <firefoxLink>Firefox</firefoxLink>, atau <safariLink>Safari</safariLink> untuk pengalaman yang terbaik.",
         "continue_warning": "Saya memahami risikonya dan ingin melanjutkan",

@@ -22,7 +22,7 @@
         "misconfigured": "Your PL Comms is misconfigured"
     },
     "failed_to_start": "Failed to start",
-    "go_to_element_io": "Go to privateline.dev",
+    "go_to_element_io": "Go to privateline.network",
     "incompatible_browser": {
         "browser_links": "Please install <chromeLink>Chrome</chromeLink>, <firefoxLink>Firefox</firefoxLink>, or <safariLink>Safari</safariLink> for the best experience.",
         "continue_warning": "I understand the risks and wish to continue",

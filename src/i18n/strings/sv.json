@@ -22,7 +22,7 @@
         "misconfigured": "Din PL Comms är felkonfigurerad"
     },
     "failed_to_start": "Misslyckade att starta",
-    "go_to_element_io": "Gå till privateline.dev",
+    "go_to_element_io": "Gå till privateline.network",
     "incompatible_browser": {
         "browser_links": "Installera <chromeLink>Chrome</chromeLink>, <firefoxLink>Firefox</firefoxLink>, eller <safariLink>Safari</safariLink> för den bästa upplevelsen.",
         "continue_warning": "Jag förstår riskerna och vill fortsätta",

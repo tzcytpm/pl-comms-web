@@ -12,27 +12,27 @@ pushd "$mydir" > /dev/null
 find "$mydir" -name "*.tsx*" -exec \
     sed -i '' -e  's|element-logo\.svg|plcomms-logo\.png|g' '{}' \;
 
-# scalar.vector.im-> mtxnode1.privateline.dev
+# scalar.vector.im-> imnode01.privateline.network
 find "$mydir" -name config.json -exec \
     sed -i '' -e  's|scalar\.vector\.im|mtxnode1\.privateline\.dev|g' '{}' \;
 
-# vector.im-> privateline.dev
+# vector.im-> privateline.network
 find "$mydir" -name config.json -exec \
     sed -i '' -e  's|vector\.im|im\.privateline\.dev|g' '{}' \;
 
-# element.io-> privateline.dev
+# element.io-> privateline.network
 find "$mydir" -name config.json -exec \
     sed -i '' -e  's|element\.io|im\.privateline\.dev|g' '{}' \;	
 
-# element.io-> privateline.dev
+# element.io-> privateline.network
 find "$mydir/src/i18n/strings" -name "*.json" -exec \
     sed -i '' -e  's|element\.io|im\.privateline\.dev|g' '{}' \;	
 
-# element.io-> privateline.dev
+# element.io-> privateline.network
 find "$mydir/src" -name "*.html" -exec \
     sed -i '' -e  's|element\.io|im\.privateline\.dev|g' '{}' \;	
 
-# element.io-> privateline.dev
+# element.io-> privateline.network
 find "$mydir/src" -name "*.ts*" -exec \
     sed -i '' -e  's|element\.io|im\.privateline\.dev|g' '{}' \;	
 

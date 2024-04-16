@@ -441,7 +441,7 @@ export default class ElectronPlatform extends VectorBasePlatform {
 
     public get baseUrl(): string {
         // This configuration is element-desktop specific so the types here do not know about it
-        return (SdkConfig.get() as unknown as Record<string, string>)["web_base_url"] ?? "https://app.im.privateline.dev";
+        return (SdkConfig.get() as unknown as Record<string, string>)["web_base_url"] ?? "https://app.im.privateline.network";
     }
 
     public async getOidcClientMetadata(): Promise<OidcRegistrationClientMetadata> {
@@ -450,7 +450,7 @@ export default class ElectronPlatform extends VectorBasePlatform {
             ...baseMetadata,
             applicationType: "native",
             // XXX: This should be overridable in config
-            clientUri: "https://im.privateline.dev",
+            clientUri: "https://im.privateline.network",
         };
     }
 

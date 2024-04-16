@@ -22,7 +22,7 @@
         "misconfigured": "PL Comms đang bị thiết lập sai"
     },
     "failed_to_start": "Không khởi động được",
-    "go_to_element_io": "Qua privateline.dev",
+    "go_to_element_io": "Qua privateline.network",
     "incompatible_browser": {
         "browser_links": "Hãy cài đặt <chromeLink>Chrome</chromeLink>, <firefoxLink>Firefox</firefoxLink>, hoặc <safariLink>Safari</safariLink> để có trải nghiệm tốt nhất.",
         "continue_warning": "Tôi hiểu rủi ro và muốn tiếp tục",

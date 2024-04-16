@@ -21,7 +21,7 @@
         "misconfigured": "Tu aplicación PL Comms está mal configurada"
     },
     "failed_to_start": "Fallo al iniciar",
-    "go_to_element_io": "Ir a privateline.dev",
+    "go_to_element_io": "Ir a privateline.network",
     "incompatible_browser": {
         "browser_links": "Por favor, instale <chromeLink>Chrome</chromeLink>, <firefoxLink>Firefox</firefoxLink>, o <safariLink>Safari</safariLink> para la mejor experiencia.",
         "continue_warning": "Entiendo los riesgos y quiero continuar",

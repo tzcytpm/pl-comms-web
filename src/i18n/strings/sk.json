@@ -22,7 +22,7 @@
         "misconfigured": "Váš PL Comms je nesprávne nastavený"
     },
     "failed_to_start": "Spustenie zlyhalo",
-    "go_to_element_io": "Prejsť na privateline.dev",
+    "go_to_element_io": "Prejsť na privateline.network",
     "incompatible_browser": {
         "browser_links": "Prosím, nainštalujte si <chromeLink>Chrome</chromeLink>, <firefoxLink>Firefox</firefoxLink> alebo <safariLink>Safari</safariLink> pre najlepší zážitok.",
         "continue_warning": "Rozumiem riziku a chcem pokračovať",

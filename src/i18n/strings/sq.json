@@ -22,7 +22,7 @@
         "misconfigured": "PL Comms-i juaj është i keqformësuar"
     },
     "failed_to_start": "S’u arrit të nisej",
-    "go_to_element_io": "Shko te privateline.dev",
+    "go_to_element_io": "Shko te privateline.network",
     "incompatible_browser": {
         "browser_links": "Ju lutemi, për funksionimin më të mirë, instaloni <chromeLink>Chrome</chromeLink>, <firefoxLink>Firefox</firefoxLink>, ose <safariLink>Safari</safariLink>.",
         "continue_warning": "I kuptoj rreziqet dhe dëshiroj të vazhdoj",
