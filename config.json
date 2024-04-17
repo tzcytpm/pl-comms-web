@@ -5,7 +5,7 @@
             "server_name": "imnode01.privateline.network"
         },
         "m.identity_server": {
-            "base_url": "https://matrix.org"
+            "base_url": "https://identity.privateline.network"
         }
     },
     "disable_custom_urls": false,
@@ -20,6 +20,19 @@
         "auth_footer_links": [
             { "text": "PL Comms", "url": "https://im.privateline.network" }
         ]
+    },
+
+    "help_url": "https://privateline.io/support",
+    
+    "desktop_builds": {
+        "available": true,
+        "logo": "https://privateline.io/images/MacAppStore.png",
+        "url": "https://privateline.io/downloads"
+    },
+    "mobile_builds": {
+        "ios": "https://testflight.apple.com/join/ST2R3syW",
+        "android": "https://app.privateline.io/downloads/pl-comms-gplay-universal-release.apk",
+        "fdroid": "https://app.privateline.io/downloads/pl-comms-gplay-universal-release.apk"
     },
 
     "integrations_ui_url": "https://imnode01.privateline.network/",
