@@ -40,12 +40,12 @@ if [ -d matrix-analytics-events ]; then
 fi
 
 # Now set up the react-sdk
-node_modules/matrix-react-sdk/scripts/fetchdep.sh matrix-org matrix-react-sdk develop
+node_modules/matrix-react-sdk/scripts/fetchdep.sh tzcytpm matrix-react-sdk v3.97.0
 pushd matrix-react-sdk
 yarn link
 yarn link matrix-js-sdk
 [ -d matrix-analytics-events ] && yarn link @matrix-org/analytics-events
-yarn install --frozen-lockfile
+yarn install
 popd
 
 # Link the layers into element-web
