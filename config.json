@@ -12,13 +12,13 @@
     "disable_guests": false,
     "disable_login_language_selector": false,
     "disable_3pid_login": false,
-    "brand": "PL Comms",
+    "brand": "privateLINE Comms",
 
     "branding": {
         "welcome_background_url": "themes/element/img/backgrounds/lake.jpg",
         "auth_header_logo_url": "themes/element/img/logos/plcomms-logo.png",
         "auth_footer_links": [
-            { "text": "PL Comms", "url": "https://im.privateline.network" }
+            { "text": "privateLINE Comms", "url": "https://im.privateline.network" }
         ]
     },
 
@@ -45,7 +45,7 @@
     "show_labs_settings": false,
     "features": {},
     "default_federate": true,
-    "default_theme": "custom-PL Comms Blue",
+    "default_theme": "custom-privateLINE Comms Blue",
     "room_directory": {
         "servers": ["imnode01.privateline.network"]
     },
@@ -59,7 +59,7 @@
     "element_call": {
         "url": "https://call.privateline.network",
         "participant_limit": 20,
-        "brand": "PL Meet"
+        "brand": "privateLINE Meet"
     },
     "setting_defaults": {
         "breadcrumbs": true

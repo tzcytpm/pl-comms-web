@@ -49,7 +49,7 @@
     "element_call": {
         "url": "https://call.privateline.network",
         "participant_limit": 20,
-        "brand": "PL Meet"
+        "brand": "privateLINE Meet"
     },
     "map_style_url": "https://api.maptiler.com/maps/streets/style.json?key=fU3vlMsMn4Jb6dnEIFsx"
 }
