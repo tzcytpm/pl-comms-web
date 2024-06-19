@@ -18,7 +18,7 @@
         "invalid_json": "پیکربندی المنت شما شامل JSON نا معتبر است. لطفا مشکل را اصلاح کنید و صفحه را بارگذاری مجدد کنید.",
         "invalid_json_detail": "پیام از طرف تجزیه کننده: %(message)s",
         "invalid_json_generic": "JSON اشتباه",
-        "misconfigured": "PL Comms شما پیکربندی نشده است"
+        "misconfigured": "privateLINE Comms شما پیکربندی نشده است"
     },
     "failed_to_start": "خطا در شروع",
     "go_to_element_io": "برو به privateline.network",
@@ -35,5 +35,5 @@
     "unknown_device": "دستگاه ناشناخته",
     "use_brand_on_mobile": "از %(brand)s گوشی استفاده کنید",
     "web_default_device_name": "%(appName)s: %(browserName)s: روی %(osName)s",
-    "welcome_to_element": "به PL Comms خوش‌آمدید"
+    "welcome_to_element": "به privateLINE Comms خوش‌آمدید"
 }

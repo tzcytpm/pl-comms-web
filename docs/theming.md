@@ -1,13 +1,13 @@
-# Theming PL Comms
+# Theming privateLINE Comms
 
 Themes are a very basic way of providing simple alternative look & feels to the
-PL Comms app via CSS & custom imagery.
+privateLINE Comms app via CSS & custom imagery.
 
 They are _NOT_ co be confused with 'skins', which describe apps which sit on top
-of matrix-react-sdk - e.g. in theory PL Comms itself is a react-sdk skin.
-As of March 2022, skins are not fully supported; PL Comms is the only available skin.
+of matrix-react-sdk - e.g. in theory privateLINE Comms itself is a react-sdk skin.
+As of March 2022, skins are not fully supported; privateLINE Comms is the only available skin.
 
-To define a theme for PL Comms:
+To define a theme for privateLINE Comms:
 
 1.  Pick a name, e.g. `teal`. at time of writing we have `light` and `dark`.
 2.  Fork `src/skins/vector/css/themes/dark.pcss` to be `teal.pcss`

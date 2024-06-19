@@ -7,53 +7,53 @@
 [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=element-web&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=element-web)
 [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=element-web&metric=bugs)](https://sonarcloud.io/summary/new_code?id=element-web)
 
-# PL Comms
+# privateLINE Comms
 
-PL Comms (formerly known as Vector and Riot) is a Matrix web client built using the [Matrix
+privateLINE Comms (formerly known as Vector and Riot) is a Matrix web client built using the [Matrix
 React SDK](https://github.com/matrix-org/matrix-react-sdk).
 
 # Supported Environments
 
-PL Comms has several tiers of support for different environments:
+privateLINE Comms has several tiers of support for different environments:
 
 -   Supported
     -   Definition: Issues **actively triaged**, regressions **block** the release
     -   Last 2 major versions of Chrome, Firefox, and Edge on desktop OSes
     -   Last 2 versions of Safari
-    -   Latest release of official PL Comms Desktop app on desktop OSes
+    -   Latest release of official privateLINE Comms Desktop app on desktop OSes
     -   Desktop OSes means macOS, Windows, and Linux versions for desktop devices
         that are actively supported by the OS vendor and receive security updates
 -   Experimental
     -   Definition: Issues **accepted**, regressions **do not block** the release
-    -   PL Comms as an installed PWA via current stable version of Chrome
+    -   privateLINE Comms as an installed PWA via current stable version of Chrome
     -   Mobile web for current stable version of Chrome, Firefox, and Safari on Android, iOS, and iPadOS
 -   Not supported
     -   Definition: Issues only affecting unsupported environments are **closed**
     -   Everything else
 
-For accessing PL Comms on an Android or iOS device, we currently recommend the
+For accessing privateLINE Comms on an Android or iOS device, we currently recommend the
 native apps [element-android](https://github.com/element-hq/element-android)
 and [element-ios](https://github.com/element-hq/element-ios).
 
 # Getting Started
 
-The easiest way to test PL Comms is to just use the hosted copy at <https://app.element.io>.
+The easiest way to test privateLINE Comms is to just use the hosted copy at <https://app.element.io>.
 The `develop` branch is continuously deployed to <https://develop.element.io>
 for those who like living dangerously.
 
-To host your own instance of PL Comms see [Installing PL Comms Web](docs/install.md).
+To host your own instance of privateLINE Comms see [Installing privateLINE Comms Web](docs/install.md).
 
-To install PL Comms as a desktop application, see [Running as a desktop app](#running-as-a-desktop-app) below.
+To install privateLINE Comms as a desktop application, see [Running as a desktop app](#running-as-a-desktop-app) below.
 
 # Important Security Notes
 
 ## Separate domains
 
-We do not recommend running PL Comms from the same domain name as your Matrix
+We do not recommend running privateLINE Comms from the same domain name as your Matrix
 homeserver. The reason is the risk of XSS (cross-site-scripting)
-vulnerabilities that could occur if someone caused PL Comms to load and render
+vulnerabilities that could occur if someone caused privateLINE Comms to load and render
 malicious user generated content from a Matrix API which then had trusted
-access to PL Comms (or other apps) due to sharing the same domain.
+access to privateLINE Comms (or other apps) due to sharing the same domain.
 
 We have put some coarse mitigations into place to try to protect against this
 situation, but it's still not good practice to do it in the first place. See
@@ -62,9 +62,9 @@ situation, but it's still not good practice to do it in the first place. See
 ## Configuration best practices
 
 Unless you have special requirements, you will want to add the following to
-your web server configuration when hosting PL Comms Web:
+your web server configuration when hosting privateLINE Comms Web:
 
--   The `X-Frame-Options: SAMEORIGIN` header, to prevent PL Comms Web from being
+-   The `X-Frame-Options: SAMEORIGIN` header, to prevent privateLINE Comms Web from being
     framed and protect from [clickjacking][owasp-clickjacking].
 -   The `frame-ancestors 'self'` directive to your `Content-Security-Policy`
     header, as the modern replacement for `X-Frame-Options` (though both should be
@@ -103,7 +103,7 @@ instead of adding that last line.
 
 # Building From Source
 
-PL Comms is a modular webapp built with modern ES6 and uses a Node.js build system.
+privateLINE Comms is a modular webapp built with modern ES6 and uses a Node.js build system.
 Ensure you have the latest LTS version of Node.js installed.
 
 Using `yarn` instead of `npm` is recommended. Please see the Yarn [install
@@ -126,14 +126,14 @@ guide](https://classic.yarnpkg.com/en/docs/install) if you do not have it alread
    web server.
 
 Note that `yarn dist` is not supported on Windows, so Windows users can run `yarn build`,
-which will build all the necessary files into the `webapp` directory. The version of PL Comms
+which will build all the necessary files into the `webapp` directory. The version of privateLINE Comms
 will not appear in Settings without using the dist script. You can then mount the
 `webapp` directory on your web server to actually serve up the app, which is
 entirely static content.
 
 # Running as a Desktop app
 
-PL Comms can also be run as a desktop app, wrapped in Electron. You can download a
+privateLINE Comms can also be run as a desktop app, wrapped in Electron. You can download a
 pre-built version from <https://element.io/get-started> or, if you prefer,
 build it yourself.
 
@@ -145,17 +145,17 @@ The [configuration docs](docs/config.md#desktop-app-configuration) show how to o
 
 # config.json
 
-PL Comms supports a variety of settings to configure default servers, behaviour, themes, etc.
+privateLINE Comms supports a variety of settings to configure default servers, behaviour, themes, etc.
 See the [configuration docs](docs/config.md) for more details.
 
 # Labs Features
 
-Some features of PL Comms may be enabled by flags in the `Labs` section of the settings.
+Some features of privateLINE Comms may be enabled by flags in the `Labs` section of the settings.
 Some of these features are described in [labs.md](https://github.com/element-hq/element-web/blob/develop/docs/labs.md).
 
 # Caching requirements
 
-PL Comms requires the following URLs not to be cached, when/if you are serving PL Comms from your own webserver:
+privateLINE Comms requires the following URLs not to be cached, when/if you are serving privateLINE Comms from your own webserver:
 
 ```
 /config.*.json
@@ -165,20 +165,20 @@ PL Comms requires the following URLs not to be cached, when/if you are serving P
 /index.html
 ```
 
-We also recommend that you force browsers to re-validate any cached copy of PL Comms on page load by configuring your
-webserver to return `Cache-Control: no-cache` for `/`. This ensures the browser will fetch a new version of PL Comms on
+We also recommend that you force browsers to re-validate any cached copy of privateLINE Comms on page load by configuring your
+webserver to return `Cache-Control: no-cache` for `/`. This ensures the browser will fetch a new version of privateLINE Comms on
 the next page load after it's been deployed. Note that this is already configured for you in the nginx config of our
 Dockerfile.
 
 # Development
 
-Before attempting to develop on PL Comms you **must** read the [developer guide
+Before attempting to develop on privateLINE Comms you **must** read the [developer guide
 for `matrix-react-sdk`](https://github.com/matrix-org/matrix-react-sdk#developer-guide), which
-also defines the design, architecture and style for PL Comms too.
+also defines the design, architecture and style for privateLINE Comms too.
 
 Read the [Choosing an issue](docs/choosing-an-issue.md) page for some guidance
 about where to start. Before starting work on a feature, it's best to ensure
-your plan aligns well with our vision for PL Comms. Please chat with the team in
+your plan aligns well with our vision for privateLINE Comms. Please chat with the team in
 [#element-dev:matrix.org](https://matrix.to/#/#element-dev:matrix.org) before
 you start so we can ensure it's something we'd be willing to merge.
 
@@ -186,15 +186,15 @@ You should also familiarise yourself with the ["Here be Dragons" guide
 ](https://docs.google.com/document/d/12jYzvkidrp1h7liEuLIe6BMdU0NUjndUYI971O06ooM)
 to the tame & not-so-tame dragons (gotchas) which exist in the codebase.
 
-The idea of PL Comms is to be a relatively lightweight "skin" of customisations on
+The idea of privateLINE Comms is to be a relatively lightweight "skin" of customisations on
 top of the underlying `matrix-react-sdk`. `matrix-react-sdk` provides both the
 higher and lower level React components useful for building Matrix communication
 apps using React.
 
-Please note that PL Comms is intended to run correctly without access to the public
+Please note that privateLINE Comms is intended to run correctly without access to the public
 internet. So please don't depend on resources (JS libs, CSS, images, fonts)
 hosted by external CDNs or servers but instead please package all dependencies
-into PL Comms itself.
+into privateLINE Comms itself.
 
 CSS hot-reload is available as an opt-in development feature. You can enable it
 by defining a `CSS_HOT_RELOAD` environment variable, in a `.env` file in the root
@@ -202,7 +202,7 @@ of the repository. See `.env.example` for documentation and an example.
 
 # Setting up a dev environment
 
-Much of the functionality in PL Comms is actually in the `matrix-react-sdk` and
+Much of the functionality in privateLINE Comms is actually in the `matrix-react-sdk` and
 `matrix-js-sdk` modules. It is possible to set these up in a way that makes it
 easy to track the `develop` branches in git and to make local changes without
 having to manually rebuild each time.
@@ -238,7 +238,7 @@ cd element-web
 Configure the app by copying `config.sample.json` to `config.json` and
 modifying it. See the [configuration docs](docs/config.md) for details.
 
-Finally, build and start PL Comms itself:
+Finally, build and start privateLINE Comms itself:
 
 ```bash
 yarn link matrix-js-sdk
@@ -260,7 +260,7 @@ Remember, the command will not terminate since it runs the web server
 and rebuilds source files when they change. This development server also
 disables caching, so do NOT use it in production.
 
-Open <http://127.0.0.1:8080/> in your browser to see your newly built PL Comms.
+Open <http://127.0.0.1:8080/> in your browser to see your newly built privateLINE Comms.
 
 **Note**: The build script uses inotify by default on Linux to monitor directories
 for changes. If the inotify limits are too low your build will fail silently or with
@@ -293,7 +293,7 @@ automatically picked up by webpack and built.
 
 If any of these steps error with, `file table overflow`, you are probably on a mac
 which has a very low limit on max open files. Run `ulimit -Sn 1024` and try again.
-You'll need to do this in each new terminal you open before building PL Comms.
+You'll need to do this in each new terminal you open before building privateLINE Comms.
 
 ## Running the tests
 

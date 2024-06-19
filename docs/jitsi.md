@@ -1,6 +1,6 @@
-# Jitsi in PL Comms
+# Jitsi in privateLINE Comms
 
-PL Comms uses [Jitsi](https://jitsi.org/) for conference calls, which provides options for
+privateLINE Comms uses [Jitsi](https://jitsi.org/) for conference calls, which provides options for
 self-hosting your own server and supports most major platforms.
 
 1:1 calls, or calls between you and one other person, do not use Jitsi. Instead, those
@@ -14,17 +14,17 @@ will add a Jitsi widget which allows anyone in the room to join.
 Integration managers (available through the 4 squares in the top right of the room) may
 provide their own approaches for adding Jitsi widgets.
 
-## Configuring PL Comms to use your self-hosted Jitsi server
+## Configuring privateLINE Comms to use your self-hosted Jitsi server
 
-You can host your own Jitsi server to use with PL Comms. It's usually advisable to use a recent
+You can host your own Jitsi server to use with privateLINE Comms. It's usually advisable to use a recent
 version of Jitsi. In particular, versions older than around 6826 will cause problems with
-PL Comms 1.9.10 or newer.
+privateLINE Comms 1.9.10 or newer.
 
-PL Comms will use the Jitsi server that is embedded in the widget, even if it is not the
+privateLINE Comms will use the Jitsi server that is embedded in the widget, even if it is not the
 one you configured. This is because conference calls must be held on a single Jitsi
 server and cannot be split over multiple servers.
 
-However, you can configure PL Comms to _start_ a conference with your Jitsi server by adding
+However, you can configure privateLINE Comms to _start_ a conference with your Jitsi server by adding
 to your [config](./config.md) the following:
 
 ```json
@@ -35,13 +35,13 @@ to your [config](./config.md) the following:
 }
 ```
 
-PL Comms's default is `meet.element.io` (a free service offered by PL Comms). `meet.jit.si`
+privateLINE Comms's default is `meet.element.io` (a free service offered by privateLINE Comms). `meet.jit.si`
 is an instance hosted by Jitsi themselves and is also free to use.
 
-Once you've applied the config change, refresh PL Comms and press the call button. This
+Once you've applied the config change, refresh privateLINE Comms and press the call button. This
 should start a new conference on your Jitsi server.
 
-**Note**: The widget URL will point to a `jitsi.html` page hosted by PL Comms. The Jitsi
+**Note**: The widget URL will point to a `jitsi.html` page hosted by privateLINE Comms. The Jitsi
 domain will appear later in the URL as a configuration parameter.
 
 **Hint**: If you want everyone on your homeserver to use the same Jitsi server by
@@ -56,17 +56,17 @@ default, and you are using element-web 1.6 or newer, set the following on your h
 }
 ```
 
-## PL Comms Android
+## privateLINE Comms Android
 
-PL Comms Android (1.0.5+) supports custom Jitsi domains, similar to PL Comms Web above.
+privateLINE Comms Android (1.0.5+) supports custom Jitsi domains, similar to privateLINE Comms Web above.
 
 1:1 calls, or calls between you and one other person, do not use Jitsi. Instead, those
 calls work directly between clients or via TURN servers configured on the respective
 homeservers.
 
-For rooms with more than 2 joined members, when creating a Jitsi conference via call/video buttons of the toolbar (not via integration manager), PL Comms Android will create a widget using the [wrapper](https://github.com/element-hq/element-web/blob/develop/docs/jitsi-dev.md) hosted on `app.element.io`.
+For rooms with more than 2 joined members, when creating a Jitsi conference via call/video buttons of the toolbar (not via integration manager), privateLINE Comms Android will create a widget using the [wrapper](https://github.com/element-hq/element-web/blob/develop/docs/jitsi-dev.md) hosted on `app.element.io`.
 The domain used is the one specified by the `/.well-known/matrix/client` endpoint, and if not present it uses the fallback defined in `config.json` (meet.element.io)
 
 For active Jitsi widgets in the room, a native Jitsi widget UI is created and points to the instance specified in the `domain` key of the widget content data.
 
-PL Comms Android manages allowed native widgets permissions a bit differently than web widgets (as the data shared are different and never shared with the widget URL). For Jitsi widgets, permissions are requested only once per domain (consent saved in account data).
+privateLINE Comms Android manages allowed native widgets permissions a bit differently than web widgets (as the data shared are different and never shared with the widget URL). For Jitsi widgets, permissions are requested only once per domain (consent saved in account data).

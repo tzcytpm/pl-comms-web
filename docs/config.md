@@ -9,7 +9,7 @@ This backwards compatibility will be getting removed in a future release so plea
 ---
 
 You can configure the app by copying `config.sample.json` to `config.json` or `config.$domain.json` and customising it.
-PL Comms will attempt to load first `config.$domain.json` and if it fails `config.json`. This mechanism allows different
+privateLINE Comms will attempt to load first `config.$domain.json` and if it fails `config.json`. This mechanism allows different
 configuration options depending on if you're hitting e.g. `app1.example.com` or `app2.example.com`. Configs are not mixed
 in any way, it either entirely uses the domain config, or entirely uses `config.json`.
 
@@ -25,7 +25,7 @@ for the desktop app the application will need to be exited fully (including via 
 
 ## Homeserver configuration
 
-In order for PL Comms to even start you will need to tell it what homeserver to connect to _by default_. Users will be
+In order for privateLINE Comms to even start you will need to tell it what homeserver to connect to _by default_. Users will be
 able to use a different homeserver if they like, though this can be disabled with `"disable_custom_urls": true` in your
 config.
 
@@ -53,7 +53,7 @@ One of the following options **must** be supplied:
    information. These are the same values seen as `base_url` in the `default_server_config` example, with `default_is_url`
    being optional.
 
-If both `default_server_config` and `default_server_name` are used, PL Comms will try to look up the connection
+If both `default_server_config` and `default_server_name` are used, privateLINE Comms will try to look up the connection
 information using `.well-known`, and if that fails, take `default_server_config` as the homeserver connection
 information.
 
@@ -82,7 +82,7 @@ the functionality.
 
 ## Default settings
 
-Some settings additionally support being specified at the config level to affect the user experience of your PL Comms Web
+Some settings additionally support being specified at the config level to affect the user experience of your privateLINE Comms Web
 instance. As of writing those settings are not fully documented, however a few are:
 
 1. `default_federate`: When `true` (default), rooms will be marked as "federatable" during creation. Typically this setting
@@ -115,20 +115,20 @@ instance. As of writing those settings are not fully documented, however a few a
 
 <!-- Author's note: https://english.stackexchange.com/questions/570116/alternative-ways-of-saying-white-labeled -->
 
-PL Comms supports some customisation of the user experience through various branding and theme options. While it doesn't support
+privateLINE Comms supports some customisation of the user experience through various branding and theme options. While it doesn't support
 complete re-branding/private labeling, a more personalised experience can be achieved for your users.
 
 1. `default_theme`: Typically either `light` (the default) or `dark`, this is the optional name of the colour theme to use.
    If using custom themes, this can be a theme name from that as well.
 2. `default_device_display_name`: Optional public name for devices created by login and registration, instead of the default
    templated string. Note that this option does not support templating, currently.
-3. `brand`: Optional name for the app. Defaults to `PL Comms`. This is used throughout the application in various strings/locations.
-4. `permalink_prefix`: An optional URL pointing to an PL Comms Web deployment. For example, `https://app.element.io`. This will
-   change all permalinks (via the "Share" menus) to point at the PL Comms Web deployment rather than `matrix.to`.
+3. `brand`: Optional name for the app. Defaults to `privateLINE Comms`. This is used throughout the application in various strings/locations.
+4. `permalink_prefix`: An optional URL pointing to an privateLINE Comms Web deployment. For example, `https://app.element.io`. This will
+   change all permalinks (via the "Share" menus) to point at the privateLINE Comms Web deployment rather than `matrix.to`.
 5. `desktop_builds`: Optional. Where the desktop builds for the application are, if available. This is explained in more detail
    down below.
 6. `mobile_builds`: Optional. Like `desktop_builds`, except for the mobile apps. Also described in more detail down below.
-7. `mobile_guide_toast`: When `true` (default), users accessing the PL Comms Web instance from a mobile device will be prompted to
+7. `mobile_guide_toast`: When `true` (default), users accessing the privateLINE Comms Web instance from a mobile device will be prompted to
    download the app instead.
 8. `update_base_url`: For the desktop app only, the URL where to acquire update packages. If specified, must be a path to a directory
    containing `macos` and `win32` directories, with the update packages within. Defaults to `https://packages.element.io/desktop/update/`
@@ -173,7 +173,7 @@ When `desktop_builds` is not specified at all, the app will assume desktop downl
 For `mobile_builds`, the following subproperties are available:
 
 1. `ios`: The URL for where to download the iOS app, such as an App Store link. When explicitly `null`, the app will assume the
-   iOS app cannot be downloaded. When not provided, the default PL Comms app will be assumed available.
+   iOS app cannot be downloaded. When not provided, the default privateLINE Comms app will be assumed available.
 2. `android`: The same as `ios`, except for Android instead.
 3. `fdroid`: The same as `android`, except for FDroid instead.
 
@@ -210,7 +210,7 @@ Starting with `branding`, the following subproperties are available:
 `embedded_pages` can be configured as such:
 
 1. `welcome_url`: A URL to an HTML page to show as a welcome page (landing on `#/welcome`). When not specified, the default
-   `welcome.html` that ships with PL Comms will be used instead.
+   `welcome.html` that ships with privateLINE Comms will be used instead.
 2. `home_url`: A URL to an HTML page to show within the app as the "home" page. When the app doesn't have a room/screen to
    show the user, it will use the home page instead. The home page is additionally accessible from the user menu. By default,
    no home page is set and therefore a hardcoded landing screen is used. More documentation and examples are [here](./custom-home.md).
@@ -237,17 +237,17 @@ Together, the options might look like this in your config:
 ```
 
 Note that `index.html` also has an og:image meta tag that is set to an image hosted on element.io. This is the image used if
-links to your copy of PL Comms appear in some websites like Facebook, and indeed PL Comms itself. This has to be static in the HTML
+links to your copy of privateLINE Comms appear in some websites like Facebook, and indeed privateLINE Comms itself. This has to be static in the HTML
 and an absolute URL (and HTTP rather than HTTPS), so it's not possible for this to be an option in config.json. If you'd like to
-change it, you can build PL Comms, but run `RIOT_OG_IMAGE_URL="http://example.com/logo.png" yarn build`. Alternatively, you can edit
-the `og:image` meta tag in `index.html` directly each time you download a new version of PL Comms.
+change it, you can build privateLINE Comms, but run `RIOT_OG_IMAGE_URL="http://example.com/logo.png" yarn build`. Alternatively, you can edit
+the `og:image` meta tag in `index.html` directly each time you download a new version of privateLINE Comms.
 
 ## SSO setup
 
-When PL Comms is deployed alongside a homeserver with SSO-only login, some options to ease the user experience might want to be set:
+When privateLINE Comms is deployed alongside a homeserver with SSO-only login, some options to ease the user experience might want to be set:
 
 1. `logout_redirect_url`: Optional URL to redirect the user to after they have logged out. Some SSO systems support a page that the
-   user can be sent to in order to log them out of that system too, making logout symmetric between PL Comms and the SSO system.
+   user can be sent to in order to log them out of that system too, making logout symmetric between privateLINE Comms and the SSO system.
 2. `sso_redirect_options`: Options to define how to handle unauthenticated users. If the object contains `"immediate": true`, then
    all unauthenticated users will be automatically redirected to the SSO system to start their login. If instead you'd only like to
    have users which land on the welcome page to be redirected, use `"on_welcome_page": true`. As an example:
@@ -263,9 +263,9 @@ When PL Comms is deployed alongside a homeserver with SSO-only login, some optio
 
 ## VoIP / Jitsi calls
 
-Currently, PL Comms uses Jitsi to offer conference calls in rooms, with an experimental PL Comms Call implementation in the works.
-A set of defaults are applied, pointing at our Jitsi and PL Comms Call instances, to ensure conference calling works, however you
-can point PL Comms at your own if you prefer.
+Currently, privateLINE Comms uses Jitsi to offer conference calls in rooms, with an experimental privateLINE Comms Call implementation in the works.
+A set of defaults are applied, pointing at our Jitsi and privateLINE Comms Call instances, to ensure conference calling works, however you
+can point privateLINE Comms at your own if you prefer.
 
 More information about the Jitsi setup can be found [here](./jitsi.md).
 
@@ -304,7 +304,7 @@ The VoIP and Jitsi options are:
         }
     }
     ```
-4. `widget_build_url`: Optional URL to have PL Comms make a request to when a user presses the voice/video call buttons in the app,
+4. `widget_build_url`: Optional URL to have privateLINE Comms make a request to when a user presses the voice/video call buttons in the app,
    if a call would normally be started by the action. The URL will be called with a `roomId` query parameter to identify the room
    being called in. The URL must respond with a JSON object similar to the following:
     ```json
@@ -335,14 +335,14 @@ The VoIP and Jitsi options are:
     by setting the option `widget_build_url_ignore_dm` to `true`.
 5. `audio_stream_url`: Optional URL to pass to Jitsi to enable live streaming. This option is considered experimental and may be removed
    at any time without notice.
-6. `element_call`: Optional configuration for native group calls using PL Comms Call, with the following subkeys:
-    - `url`: The URL of the PL Comms Call instance to use for native group calls. This option is considered experimental
+6. `element_call`: Optional configuration for native group calls using privateLINE Comms Call, with the following subkeys:
+    - `url`: The URL of the privateLINE Comms Call instance to use for native group calls. This option is considered experimental
       and may be removed at any time without notice. Defaults to `https://call.element.io`.
-    - `use_exclusively`: A boolean specifying whether PL Comms Call should be used exclusively as the only VoIP stack in
+    - `use_exclusively`: A boolean specifying whether privateLINE Comms Call should be used exclusively as the only VoIP stack in
       the app, removing the ability to start legacy 1:1 calls or Jitsi calls. Defaults to `false`.
     - `participant_limit`: The maximum number of users who can join a call; if
       this number is exceeded, the user will not be able to join a given call.
-    - `brand`: Optional name for the app. Defaults to `PL Comms Call`. This is
+    - `brand`: Optional name for the app. Defaults to `privateLINE Comms Call`. This is
       used throughout the application in various strings/locations.
 
 ## Bug reporting
@@ -376,14 +376,14 @@ For example:
 
 ## Integration managers
 
-Integration managers are embedded applications within PL Comms to help the user configure bots, bridges, and widgets. An integration manager
+Integration managers are embedded applications within privateLINE Comms to help the user configure bots, bridges, and widgets. An integration manager
 is a separate piece of software not typically available with your homeserver. To disable integrations, set the options defined here to `null`.
 
 1. `integrations_ui_url`: The UI URL for the integration manager.
 2. `integrations_rest_url`: The REST interface URL for the integration manager.
 3. `integrations_widgets_urls`: A list of URLs the integration manager uses to host widgets.
 
-If you would like to use Scalar, the integration manager maintained by PL Comms, the following options would apply:
+If you would like to use Scalar, the integration manager maintained by privateLINE Comms, the following options would apply:
 
 ```json
 {
@@ -432,12 +432,12 @@ analytics are deemed impossible and the user won't be asked to opt in to the sys
 There are additional root-level options which can be specified:
 
 1. `analytics_owner`: the company name used in dialogs talking about analytics - this defaults to `brand`,
-   and is useful when the provider of analytics is different from the provider of the PL Comms instance.
+   and is useful when the provider of analytics is different from the provider of the privateLINE Comms instance.
 2. `privacy_policy_url`: URL to the privacy policy including the analytics collection policy.
 
 ## Miscellaneous
 
-PL Comms supports other options which don't quite fit into other sections of this document.
+privateLINE Comms supports other options which don't quite fit into other sections of this document.
 
 To configure whether presence UI is shown for a given homeserver, set `enable_presence_by_hs_url`. It is recommended to
 set this value to the following at a minimum:
@@ -457,10 +457,10 @@ The identity server is used for inviting other users to a room via third party
 identifiers like emails and phone numbers. It is not used to store your password
 or account information.
 
-As of PL Comms 1.4.0, all identity server functions are optional and you are
+As of privateLINE Comms 1.4.0, all identity server functions are optional and you are
 prompted to agree to terms before data is sent to the identity server.
 
-PL Comms will check multiple sources when looking for an identity server to use in
+privateLINE Comms will check multiple sources when looking for an identity server to use in
 the following order of preference:
 
 1. The identity server set in the user's account data
@@ -470,7 +470,7 @@ the following order of preference:
    login
 3. The identity server provided by the Riot config file
 
-If none of these sources have an identity server set, then PL Comms will prompt the
+If none of these sources have an identity server set, then privateLINE Comms will prompt the
 user to set an identity server first when attempting to use features that
 require one.
 
