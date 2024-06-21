@@ -57,7 +57,7 @@ interface SquirrelUpdate {
     updateURL: string;
 }
 
-const SSO_ID_KEY = "element-desktop-ssoid";
+const SSO_ID_KEY = "privateline-desktop-ssoid";
 
 const isMac = navigator.platform.toUpperCase().includes("MAC");
 
@@ -129,7 +129,7 @@ export default class ElectronPlatform extends VectorBasePlatform {
 
         // try to flush the rageshake logs to indexeddb before quit.
         window.electron.on("before-quit", function () {
-            logger.log("element-desktop closing");
+            logger.log("privateline-desktop closing");
             rageshake.flush();
         });
 
@@ -440,8 +440,8 @@ export default class ElectronPlatform extends VectorBasePlatform {
     }
 
     public get baseUrl(): string {
-        // This configuration is element-desktop specific so the types here do not know about it
-        return (SdkConfig.get() as unknown as Record<string, string>)["web_base_url"] ?? "https://app.im.privateline.network";
+        // This configuration is privateline-desktop specific so the types here do not know about it
+        return (SdkConfig.get() as unknown as Record<string, string>)["web_base_url"] ?? "https://im.privateline.network";
     }
 
     public async getOidcClientMetadata(): Promise<OidcRegistrationClientMetadata> {

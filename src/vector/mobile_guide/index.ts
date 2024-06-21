@@ -104,7 +104,7 @@ async function initPage(): Promise<void> {
     if (isUrl && !isUrl.endsWith("/")) isUrl += "/";
 
     if (hsUrl !== "https://matrix.org/") {
-        let url = "https://mobile.im.privateline.network?hs_url=" + encodeURIComponent(hsUrl);
+        let url = "https://im.privateline.network?hs_url=" + encodeURIComponent(hsUrl);
 
         if (isUrl) {
             document.getElementById("custom_is")!.style.display = "block";
