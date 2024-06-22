@@ -23,7 +23,7 @@ import { _t } from "../../../languageHandler";
 const VectorAuthFooter = (): ReactElement => {
     const brandingConfig = SdkConfig.getObject("branding");
     const links = brandingConfig?.get("auth_footer_links") ?? [
-        { "text": "privateLINE Comms", "url": "https://im.privateline.network" }
+        { "text": "privateLINE Comms Dev", "url": "https://im.privateline.network" }
     ];
 
     const authFooterLinks: JSX.Element[] = [];

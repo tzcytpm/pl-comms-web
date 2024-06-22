@@ -1,6 +1,6 @@
 # Labs features
 
-If Labs is enabled in the [privateLINE Comms config](config.md), you can enable some of these features by going
+If Labs is enabled in the [privateLINE Comms Dev config](config.md), you can enable some of these features by going
 to `Settings->Labs`. This list is non-exhaustive and subject to change, chat in
 [#element-web:matrix.org](https://matrix.to/#/#element-web:matrix.org) for more information.
 
@@ -65,8 +65,8 @@ tab as the single source of truth just yet.
 
 ## Custom themes (`feature_custom_themes`)
 
-Custom themes are possible through privateLINE Comms's [theme support](./theming.md), though
-normally these themes need to be defined in the config for privateLINE Comms. This labs flag
+Custom themes are possible through privateLINE Comms Dev's [theme support](./theming.md), though
+normally these themes need to be defined in the config for privateLINE Comms Dev. This labs flag
 adds an ability for end users to add themes themselves by using a URL to the JSON
 theme definition.
 
@@ -85,24 +85,24 @@ Enables sharing your current location to the timeline, with live updates.
 
 Enables support for creating and joining video rooms, which are persistent video chats that users can jump in and out of.
 
-## privateLINE Comms Call video rooms (`feature_element_call_video_rooms`) [In Development]
+## privateLINE Comms Dev Call video rooms (`feature_element_call_video_rooms`) [In Development]
 
-Enables support for video rooms that use privateLINE Comms Call rather than Jitsi, and causes the 'New video room' option to create privateLINE Comms Call video rooms rather than Jitsi ones.
+Enables support for video rooms that use privateLINE Comms Dev Call rather than Jitsi, and causes the 'New video room' option to create privateLINE Comms Dev Call video rooms rather than Jitsi ones.
 
 This flag will not have any effect unless `feature_video_rooms` is also enabled.
 
 ## New group call experience (`feature_group_calls`) [In Development]
 
-This feature allows users to place and join native [MSC3401](https://github.com/matrix-org/matrix-spec-proposals/pull/3401) group calls in compatible rooms, using privateLINE Comms Call.
+This feature allows users to place and join native [MSC3401](https://github.com/matrix-org/matrix-spec-proposals/pull/3401) group calls in compatible rooms, using privateLINE Comms Dev Call.
 
 If you're enabling this at the deployment level, you may also want to reference the docs for the `element_call` config section.
 
-## Disable per-sender encryption for privateLINE Comms Call (`feature_disable_call_per_sender_encryption`)
+## Disable per-sender encryption for privateLINE Comms Dev Call (`feature_disable_call_per_sender_encryption`)
 
-The default for embedded privateLINE Comms Call in privateLINE Comms Web is per-participant encryption.
-This labs flag disables encryption for embedded privateLINE Comms Call in encrypted rooms.
+The default for embedded privateLINE Comms Dev Call in privateLINE Comms Dev Web is per-participant encryption.
+This labs flag disables encryption for embedded privateLINE Comms Dev Call in encrypted rooms.
 
-Under the hood this stops privateLINE Comms Web from adding the `perParticipantE2EE` flag for the privateLINE Comms Call widget url.
+Under the hood this stops privateLINE Comms Dev Web from adding the `perParticipantE2EE` flag for the privateLINE Comms Dev Call widget url.
 
 This is useful while we experiment with encryption and to make calling compatible with platforms that don't use encryption yet.
 
@@ -112,7 +112,7 @@ Enables rendering of MD / HTML in room topics.
 
 ## Use the Rust cryptography implementation (`feature_rust_crypto`) [In Development]
 
-Configures privateLINE Comms to use a new cryptography implementation based on the [matrix-rust-sdk](https://github.com/matrix-org/matrix-rust-sdk).
+Configures privateLINE Comms Dev to use a new cryptography implementation based on the [matrix-rust-sdk](https://github.com/matrix-org/matrix-rust-sdk).
 
 This setting is (currently) _sticky_ to a user's session: it only takes effect when the user logs in to a new session. Likewise, even after disabling the setting in `config.json`, the Rust implementation will remain in use until users log out.
 

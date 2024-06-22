@@ -1,4 +1,4 @@
-# How to translate privateLINE Comms (Dev Guide)
+# How to translate privateLINE Comms Dev (Dev Guide)
 
 ## Requirements
 

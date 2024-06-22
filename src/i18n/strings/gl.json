@@ -15,10 +15,10 @@
         "app_launch_unexpected_error": "Fallo non agardado ao preparar a app. Detalles na consola.",
         "cannot_load_config": "Non se cargou o ficheiro de configuración: actualiza a páxina para reintentalo.",
         "invalid_configuration_no_server": "Configuración non válida: non se indicou servidor por defecto.",
-        "invalid_json": "A configuración de privateLINE Comms contén JSON non válido. Corrixe o problema e recarga a páxina.",
+        "invalid_json": "A configuración de privateLINE Comms Dev contén JSON non válido. Corrixe o problema e recarga a páxina.",
         "invalid_json_detail": "A mensaxe desde o intérprete é: %(message)s",
         "invalid_json_generic": "JSON non válido",
-        "misconfigured": "privateLINE Comms non está ben configurado"
+        "misconfigured": "privateLINE Comms Dev non está ben configurado"
     },
     "failed_to_start": "Fallou o inicio",
     "go_to_element_io": "Ir a privateline.network",
@@ -35,5 +35,5 @@
     "unknown_device": "Dispositivo descoñecido",
     "use_brand_on_mobile": "Utiliza %(brand)s no móbil",
     "web_default_device_name": "%(appName)s: %(browserName)s en %(osName)s",
-    "welcome_to_element": "Benvida/o a privateLINE Comms"
+    "welcome_to_element": "Benvida/o a privateLINE Comms Dev"
 }
