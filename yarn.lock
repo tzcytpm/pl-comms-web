@@ -3451,12 +3451,6 @@
   resolved "https://registry.yarnpkg.com/@ungap/structured-clone/-/structured-clone-1.2.0.tgz#756641adb587851b5ccb3e095daf27ae581c8406"
   integrity sha512-zuVdFrMJiuCDQUMCzQaD6KL28MjnqqN8XnAqiEq9PNm/hCPTSGfrXCOfwj1ow4LFb/tNymJPwsNbVePc1xFqrQ==
 
-"@vector-im/compound-design-tokens@https://github.com/tzcytpm/compound-design-tokens.git#v1.2.0":
-  version "1.2.0"
-  resolved "https://github.com/tzcytpm/compound-design-tokens.git#23bb794d4709236e3fc3bbc6e87e3d08cf4d01c1"
-  dependencies:
-    svg2vectordrawable "^2.9.1"
-
 "@vector-im/compound-web@^3.1.1":
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/@vector-im/compound-web/-/compound-web-3.1.1.tgz#4f3267e8c860475eb69de37e375950dc77a649a8"
