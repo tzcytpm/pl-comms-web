@@ -85,5 +85,6 @@
     "setting_defaults": {
         "breadcrumbs": true
     },
+    "bug_report_endpoint_url": "https://logs.privateline.io/api/submit",
     "map_style_url": "https://api.maptiler.com/maps/streets/style.json?key=fU3vlMsMn4Jb6dnEIFsx"
 }
