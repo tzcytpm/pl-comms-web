@@ -1,6 +1,6 @@
 {
-    "name": "privateLINE Comms",
-    "short_name": "privateLINE Comms",
+    "name": "PL Comms",
+    "short_name": "PL Comms",
     "display": "standalone",
     "theme_color": "#76CFA6",
     "start_url": "index.html",

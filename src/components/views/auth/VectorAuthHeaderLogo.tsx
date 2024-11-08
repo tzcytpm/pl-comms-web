@@ -25,7 +25,7 @@ export default class VectorAuthHeaderLogo extends React.PureComponent {
 
         return (
             <aside className="mx_AuthHeaderLogo">
-                <img src={logoUrl} alt="privateLINE Comms" />
+                <img src={logoUrl} alt="PL Comms" />
             </aside>
         );
     }
