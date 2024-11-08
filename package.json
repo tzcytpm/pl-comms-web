@@ -1,8 +1,8 @@
 {
     "name": "privateline-comms-web",
-    "version": "1.11.69",
-    "description": "A feature-rich client for privateLINE Comms",
-    "author": "privateLINE Comms",
+    "version": "1.11.73",
+    "description": "A feature-rich client for PL Comms",
+    "author": "PL Comms",
     "repository": {
         "type": "git",
         "url": "https://github.com/tzcytpm/pl-comms-web"

@@ -15,10 +15,10 @@
         "app_launch_unexpected_error": "Óvænt villa við undirbúning forritsins. Sjá nánar á stjórnskjá.",
         "cannot_load_config": "Ekki er hægt að hlaða stillingaskrána: endurnýjaðu síðuna til að reyna aftur.",
         "invalid_configuration_no_server": "Ógild uppsetning: enginn sjálfgefinn vefþjónn tilgreindur.",
-        "invalid_json": "privateLINE Comms Dev-stillingar þínar innihalda ógilt JSON. Leiðréttu vandamálið og endurlestu síðuna.",
+        "invalid_json": "PL Comms Dev-stillingar þínar innihalda ógilt JSON. Leiðréttu vandamálið og endurlestu síðuna.",
         "invalid_json_detail": "Skilaboðið frá þáttaranum er %(message)s",
         "invalid_json_generic": "Ógilt JSON",
-        "misconfigured": "privateLINE Comms Dev-tilvikið þitt er rangt stillt"
+        "misconfigured": "PL Comms Dev-tilvikið þitt er rangt stillt"
     },
     "failed_to_start": "Mistókst að ræsa",
     "go_to_element_io": "Fara á privateline.network",
@@ -35,5 +35,5 @@
     "unknown_device": "Óþekkt tæki",
     "use_brand_on_mobile": "Nota %(brand)s í síma",
     "web_default_device_name": "%(appName)s: %(browserName)s á %(osName)s",
-    "welcome_to_element": "Velkomin í privateLINE Comms Dev"
+    "welcome_to_element": "Velkomin í PL Comms Dev"
 }

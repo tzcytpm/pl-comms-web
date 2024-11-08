@@ -1,7 +1,7 @@
 # Review Guidelines
 
 The following summarises review guidelines that we follow for pull requests in
-privateLINE Comms Dev Web and other supporting repos. These are just guidelines (not strict
+PL Comms Web and other supporting repos. These are just guidelines (not strict
 rules) and may be updated over time.
 
 ## Code Review
@@ -61,7 +61,7 @@ When reviewing code, here are some things we look for and also things we avoid:
 ## Code Quality
 
 In the past, we have occasionally written different kinds of tests for
-privateLINE Comms Dev and the SDKs, but it hasn't been a consistent focus. Going forward, we'd
+PL Comms and the SDKs, but it hasn't been a consistent focus. Going forward, we'd
 like to change that.
 
 -   For new features, code reviewers will expect some form of automated testing to
@@ -97,7 +97,7 @@ feature can be enabled by default.
 
 ## Design and Product Review
 
-We want to ensure that all changes to privateLINE Comms Dev fit with our design and product
+We want to ensure that all changes to PL Comms fit with our design and product
 vision. We often request review from those teams so they can provide their
 perspective.
 
@@ -115,6 +115,6 @@ will be added automatically so that anyone who's interested can try them out
 easily.
 
 Before starting work on a feature, it's best to ensure your plan aligns well
-with our vision for privateLINE Comms Dev. Please chat with the team in
+with our vision for PL Comms. Please chat with the team in
 [#element-dev:matrix.org](https://matrix.to/#/#element-dev:matrix.org) before
 you start so we can ensure it's something we'd be willing to merge.

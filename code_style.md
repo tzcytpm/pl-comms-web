@@ -1,4 +1,4 @@
-# privateLINE Comms Dev Web/Desktop code style guide
+# PL Comms Dev Web/Desktop code style guide
 
 This code style applies to projects which the element-web team directly maintains or is reasonably
 adjacent to. As of writing, these are:

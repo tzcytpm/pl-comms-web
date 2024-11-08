@@ -1,10 +1,10 @@
-# How to translate privateLINE Comms Dev
+# How to translate PL Comms
 
 ## Requirements
 
 -   Web Browser
 -   Be able to understand English
--   Be able to understand the language you want to translate privateLINE Comms Dev into
+-   Be able to understand the language you want to translate PL Comms into
 
 ## Join #element-translations:matrix.org
 
@@ -21,7 +21,7 @@ the general discussion room linked above.
 
 ### What are `%(something)s`?
 
-These things are placeholders that are expanded when displayed by privateLINE Comms Dev. They can be room names, usernames or similar.
+These things are placeholders that are expanded when displayed by PL Comms. They can be room names, usernames or similar.
 If you find one, you can move to the right place for your language, but not delete it as the variable will be missing if you do.
 A special case is `%(count)s` as this is also used to determine which pluralisation is used.
 

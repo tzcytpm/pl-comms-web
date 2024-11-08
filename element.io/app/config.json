@@ -1,24 +1,24 @@
 {
     "default_server_config": {
         "m.homeserver": {
-            "base_url": "https://imnode01.privateline.network",
-            "server_name": "imnode01.privateline.network"
+            "base_url": "https://mtxnode1.privateline.dev",
+            "server_name": "mtxnode1.privateline.dev"
         },
         "m.identity_server": {
-            "base_url": "https://identity.privateline.network"
+            "base_url": "https://identify.privateline.network"
         }
     },
     "disable_custom_urls": false,
     "disable_guests": false,
     "disable_login_language_selector": false,
     "disable_3pid_login": false,
-    "brand": "privateLINE Comms Dev",
+    "brand": "PL Comms Dev",
 
     "branding": {
-        "welcome_background_url": "themes/element/img/backgrounds/lake.jpg",
-        "auth_header_logo_url": "themes/element/img/logos/plcomms-logo.png",
+        "welcome_background_url": "themes/element/img/backgrounds/rice_terraces.jpg",
+        "auth_header_logo_url": "themes/element/img/logos/plcomms-logo-dev.png",
         "auth_footer_links": [
-            { "text": "privateLINE Comms Dev", "url": "https://im.privateline.network" }
+            { "text": "PL Comms Dev", "url": "https://im.privateline.dev" }
         ]
     },
 
@@ -35,38 +35,38 @@
         "fdroid": "https://app.privateline.io/downloads/pl-comms-gplay-universal-release.apk"
     },
 
-    "integrations_ui_url": "https://imnode01.privateline.network/",
-    "integrations_rest_url": "https://imnode01.privateline.network/api",
+    "integrations_ui_url": "https://mtxnode1.privateline.dev/",
+    "integrations_rest_url": "https://mtxnode1.privateline.dev/api",
     "integrations_widgets_urls": [
-        "https://imnode01.privateline.network/_matrix/integrations/v1",
-        "https://imnode01.privateline.network/api"
+        "https://mtxnode1.privateline.dev/_matrix/integrations/v1",
+        "https://mtxnode1.privateline.dev/api"
     ],
     "default_country_code": "US",
     "show_labs_settings": false,
     "features": {
-        "feature_report_to_moderators":false,
-        "feature_latex_maths":false,
-        "feature_pinning":false,
-        "feature_jump_to_date":false,
-        "feature_mjolnir":false,
-        "feature_dm_verification":false,
-        "feature_bridge_state":false,
-        "feature_custom_themes":false,
-        "feature_dehydration":false,
-        "feature_location_share_live":false,
+        "feature_report_to_moderators":true,
+        "feature_latex_maths":true,
+        "feature_pinning":true,
+        "feature_jump_to_date":true,
+        "feature_mjolnir":true,
+        "feature_dm_verification":true,
+        "feature_bridge_state":true,
+        "feature_custom_themes":true,
+        "feature_dehydration":true,
+        "feature_location_share_live":true,
         "feature_video_rooms":true,
         "feature_element_call_video_rooms":true,
         "feature_group_calls":true,
-        "feature_disable_call_per_sender_encryption":false,
-        "feature_html_topic":false,
-        "feature_new_room_decoration_ui":false,
+        "feature_disable_call_per_sender_encryption":true,
+        "feature_html_topic":true,
+        "feature_new_room_decoration_ui":true,
         "feature_notifications":true,
         "feature_ask_to_join":true
     },
     "default_federate": true,
     "default_theme": "light",
     "room_directory": {
-        "servers": ["imnode01.privateline.network"]
+        "servers": ["mtxnode1.privateline.dev"]
     },
     "enable_presence_by_hs_url": {
         "https://matrix.org": false,
@@ -75,8 +75,12 @@
     "setting_defaults": {
         "breadcrumbs": true
     },
+    "sso_redirect_options": {
+        "immediate": false,
+        "on_welcome_page": true
+    },
     "jitsi": {
-        "preferred_domain": "call.privateline.network",
+        "preferred_domain": "call.privateline.dev",
         "brand": "PL Meet",
         "legacy_brand": "PL Meet"
     },
@@ -84,9 +88,6 @@
         "url": "https://meet.privateline.dev",
         "participant_limit": 20,
         "brand": "PL eCall"
-    },
-    "setting_defaults": {
-        "breadcrumbs": true
     },
     "map_style_url": "https://api.maptiler.com/maps/streets/style.json?key=fU3vlMsMn4Jb6dnEIFsx"
 }
