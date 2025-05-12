@@ -12,7 +12,7 @@
     "disable_guests": false,
     "disable_login_language_selector": false,
     "disable_3pid_login": true,
-    "brand": "privateLINE Comms",
+    "brand": "PL Comms",
 
     "branding": {
         "welcome_background_url": "themes/element/img/backgrounds/lake.jpg",
